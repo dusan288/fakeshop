@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FakeShop App</title>
+</head>
+<body>
+    <h1> FakeShop App </h1>   
+    <h3>Insert new item to Cart</h3>
+    <form id="item-form">
+        <label for="name">Product name:</label>
+        <input type="text" id="product-name" name="name">
+        <label for="price">Price:</label>
+        <input type="text" name="price" id="product-price">
+    <button type="submit">Add Item</button>
+    </form>
+    
+    <h3> Cart Items: </h3>
+    <div>
+        <ul id='item-list'>
+            <li id="item-name">Monitor</li>
+        </ul>
+        <br>
+        <button id='btn-print'>Print Cart</button>
+        <button id='btn-sort-dsc'>Sort DSC by price</button>
+        <button id='btn-sort-asc'>Sort ASC by price</button>
+    </div> 
+ <script src="./cartservice.js"></script>
+ <script src="./app.js"></script>   
+</body>
+</html>
